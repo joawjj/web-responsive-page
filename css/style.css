@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: darkgray;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: black;
+    min-height: 200px;
+    gap: 1rem;
+}
+
+.main-content h3{
+    color: #fff;
+    margin: 10px 0 0 0;
+}
+
+.header img{
+    max-width: 150px;
+    align-self: center;
+    margin: 10px;
+    min-height: 50px;
+}
+
+.buttons-header{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.button-content:hover{
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+}
+
+.button-content{
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 10px 15px;
+    background-color: black;
+    color: #fff;
+    border: none;
+}
+
+.head-text{
+    font-size: 10px;
+    margin: 15px 10px;
+}
+
+.head-text h1{
+    font-size: 25px;
+    margin: 10px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border:2px solid #fff;
+    margin: 15px 10px;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.item img{
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 220px;
+}
+
+.item:hover{
+    border: 2px solid black;
+    transition: .5s;
+}
+
+.aside{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 1rem;
+    background-color: black;
+}
+
+.aside-itens{
+    border-radius: 10px;
+    margin: 1rem;
+    background-color: #fff;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    text-align: center;
+    background-color: black;
+    min-height: 200px;
+    gap: 1rem;
+}
+
+.footer img{
+    max-width: 100px;
+    align-self: center;
+    margin: 10px;
+    max-height: 100px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #fff;
+    margin: 15px 0 0 0;
+}
+
+.footer a:hover{
+    cursor: pointer;
+}
+
+@media(min-width:768px){
+    .head-text{
+        font-size:15px
+    }
+
+    .main-content{
+        display: flex;
+    }
+
+    .mid-content{
+        min-width: 450px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .aside-itens{
+        min-height: fit-content;
+    }
+
+    .aside{
+        max-width: 300px;
+        max-height: 1250px;
+    }
+}
+
+@media(min-width:1024px){
+    .container{
+        min-height: 100vh;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-height: 100px;
+    }
+
+    .header img{
+        margin: 25px;
+    }
+
+    .buttons-header{
+        gap: 1rem;
+    }
+
+    .button-content{
+        max-height: 50px;
+        align-self: center;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .aside{
+        align-self: center;
+        max-width: fit-content;
+    }
+
+    .aside-content{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr) ;
+    }
+
+    .mid-content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
